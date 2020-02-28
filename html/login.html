@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>login</title>
+    <style>
+        html, body {
+            margin: 0px;
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            background: url(../image/mainBackground.png);
+            background-position: center top;
+        }
+        footer {
+            text-align: center;
+            height: 60px;
+            padding-top: 10px;
+            font-size: 12px;
+            font-family: serif;
+            letter-spacing: 3px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .loginHeader {
+            text-align: center;
+            margin-top: 40%;
+            margin-left: 3%;
+            font-size: 30px;
+            font-family: serif;
+            letter-spacing: 12px;
+            color: white;
+        }
+        .users {
+            width: 60%;
+            height: 100%;
+            margin-left: 20%;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .users li {
+            background-color: rgba(255, 255, 255, 0.3);
+            margin-top: 20px;
+            height: 60px;
+            list-style: none;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .usersLi {
+            display: flex;
+            text-align: right;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginHeader">
+        MZSLDM01
+    </div>
+    <div class="users">
+        <li class="usersLi" onclick="toMainInfo()">
+            <div id="userName" style="font-size: 30px;width: 50%;height: 100%;text-align: left;display: flex;align-items: center;">Name</div>
+            <div style="width: 50%;height: 100%;">
+                <div id="userLevel" style="width: 100%;padding-top: 6px;">userLevel</div>
+                <div id="lastLoginDate" style="width: 100%;padding-top: 2px;">lastLoginDate</div>
+            </div>
+        </li>
+        <li style="font-size: 50px;">+</li>
+        <li style="font-size: 45px;padding-top: 10px;font-family: serif;" onclick="tempClear()">Clear</li>
+        <li style="font-size: 45px;padding-top: 10px;font-family: serif;" onclick="exitApp()">Exit</li>
+    </div>
+
+    <footer onclick="toOwnsite()">V1.0.200219<br>mengze.top</footer>
+
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/main.js"></script>
+<script>
+    apiready = function () {
+        api.addEventListener({
+            name: 'keyback'
+        }, function(ret, err){
+            // api.closeWidget();
+        });
+        loginFun();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>fixedPane</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <style>
+        html, body {
+            background-color: #dfdede;
+        }
+        li {
+            padding: 3px 10px;
+            border-bottom: 1px solid #d4d3d3;
+        }
+        .liActive {
+            background-color: #3ABA63;
+        }
+        li a {
+            display: block;
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li tapmode="liActive" onclick="toUserInfo()"><a class="nav">人物信息</a></li>
+        <li tapmode="liActive" onclick="toSkill()"><a class="nav">技能天赋</a></li>
+        <li tapmode="liActive" onclick="toItems()"><a class="nav">物品装备</a></li>
+        <li tapmode="liActive" onclick="toBanking()"><a class="nav">金融交易</a></li>
+        <li tapmode="liActive" onclick="toTask()"><a class="nav">任务日常</a></li>
+        <li tapmode="liActive" onclick="toDungeon()"><a class="nav">副本挂机</a></li>
+        <li tapmode="liActive" onclick="toHomeland()"><a class="nav">家园沙盒</a></li>
+        <li tapmode="liActive" onclick="toCollection()"><a class="nav">收藏经典</a></li>
+        <li tapmode="liActive" onclick="toAchievement()"><a class="nav">成就称号</a></li>
+        <li tapmode="liActive" onclick="toLogin()"><a class="nav">登录界面</a></li>
+        <li tapmode="liActive" onclick="toDevelopment()"><a class="nav">开发留存</a></li>
+    </ul>
+</nav>
+</body>
+
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/main.js"></script>
+<script>
+    apiready = function () {
+        api.setStatusBarStyle({
+            style: 'dark',
+        });
+        $api.fixStatusBar($api.dom('nav'));
+    }
+</script>
+</html>
