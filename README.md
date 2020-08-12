@@ -11,10 +11,10 @@ MZ Self Life Data MAnager 01 with APICloud
 
 ***
 ## 控制台详情
-![](/sourcefile/[O]APICloud安卓APP试用/T.png)
+![](https://mengze.top//sourcefile/[O]APICloud安卓APP试用/T.png)
 
 ## 预览视频
 >视频大小 - 2.45MB
-<video src="/sourcefile/[O]APICloud安卓APP试用/MZSLDM01_APP.mp4" controls="controls">很抱歉，您的浏览器暂不支持video标签，请尝试更换浏览器进行查看....</video>
+<video src="https://mengze.top//sourcefile/[O]APICloud安卓APP试用/MZSLDM01_APP.mp4" controls="controls">很抱歉，您的浏览器暂不支持video标签，请尝试更换浏览器进行查看....</video>
 
-## [APP下载](/sourcefile/[O]APICloud安卓APP试用/MZSLDM01_APP.apk)
+## [APP下载](https://mengze.top//sourcefile/[O]APICloud安卓APP试用/MZSLDM01_APP.apk)
